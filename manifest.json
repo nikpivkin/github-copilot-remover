@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Copilot Remover",
+    "version": "0.1.0",
+    "description": "Removes the GitHub Copilot preview from the homepage.",
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/"],
+            "js": ["index.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
