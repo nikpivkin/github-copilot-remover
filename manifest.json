@@ -5,7 +5,7 @@
     "description": "Removes the GitHub Copilot preview from the homepage.",
     "content_scripts": [
         {
-            "matches": ["https://github.com/"],
+            "matches": ["https://github.com/", "https://github.com/dashboard/"],
             "js": ["index.js"],
             "run_at": "document_idle"
         }
